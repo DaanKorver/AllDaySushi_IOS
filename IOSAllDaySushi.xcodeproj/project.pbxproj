@@ -15,6 +15,7 @@
 		3FC4378F2334DBA800FB582A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC4378D2334DBA800FB582A /* LaunchScreen.storyboard */; };
 		3FC4379A2334DBA800FB582A /* IOSAllDaySushiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC437992334DBA800FB582A /* IOSAllDaySushiTests.swift */; };
 		3FC437A52334DBA800FB582A /* IOSAllDaySushiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC437A42334DBA800FB582A /* IOSAllDaySushiUITests.swift */; };
+		3FD5FE4A2334FA7700050711 /* splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD5FE492334FA7700050711 /* splashscreen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3FC437A02334DBA800FB582A /* IOSAllDaySushiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSAllDaySushiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC437A42334DBA800FB582A /* IOSAllDaySushiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSAllDaySushiUITests.swift; sourceTree = "<group>"; };
 		3FC437A62334DBA800FB582A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FD5FE492334FA7700050711 /* splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splashscreen.png; path = ../../../Downloads/splashscreen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3FC4378B2334DBA800FB582A /* Assets.xcassets */,
 				3FC4378D2334DBA800FB582A /* LaunchScreen.storyboard */,
 				3FC437902334DBA800FB582A /* Info.plist */,
+				3FD5FE492334FA7700050711 /* splashscreen.png */,
 			);
 			path = IOSAllDaySushi;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FC4378F2334DBA800FB582A /* LaunchScreen.storyboard in Resources */,
+				3FD5FE4A2334FA7700050711 /* splashscreen.png in Resources */,
 				3FC4378C2334DBA800FB582A /* Assets.xcassets in Resources */,
 				3FC4378A2334DBA800FB582A /* Main.storyboard in Resources */,
 			);
