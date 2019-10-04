@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Category Controller-->
+        <!--home-->
         <scene sceneID="RUX-fR-MtN">
             <objects>
                 <tableViewController id="zw4-j3-36R" customClass="CategoryController" customModule="IOSAllDaySushi" customModuleProvider="target" sceneMemberID="viewController">
@@ -53,13 +53,13 @@
                             <outlet property="delegate" destination="zw4-j3-36R" id="feF-KD-C0G"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="FBQ-pd-7IX"/>
+                    <tabBarItem key="tabBarItem" title="home" image="home_tab_bar_icon" id="FBQ-pd-7IX"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sB3-xm-BhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="837.68115942028987" y="-303.34821428571428"/>
         </scene>
-        <!--Second-->
+        <!--Cart-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="IOSAllDaySushi" customModuleProvider="target" sceneMemberID="viewController">
@@ -90,7 +90,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Cart" image="shopping_car_tab_bar_icon" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -116,7 +116,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="home_tab_bar_icon" width="32" height="30"/>
         <image name="icon kopie" width="265" height="215"/>
-        <image name="second" width="30" height="30"/>
+        <image name="shopping_car_tab_bar_icon" width="27" height="25.5"/>
     </resources>
 </document>
