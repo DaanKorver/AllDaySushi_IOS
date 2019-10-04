@@ -9,6 +9,7 @@
 import UIKit
 
 class CategoryController: UITableViewController {
+    let sushi = ["Sushi", "groentesushi", "vis"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,18 +25,20 @@ class CategoryController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return sushi.count
     }
     
    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NigiriCell", for: indexPath)
+        
+        cell.textLabel?.text = sushi[indexPath.item]
 
         // Configure the cell...
 
