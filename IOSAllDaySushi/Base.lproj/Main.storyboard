@@ -10,21 +10,41 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Category Controller-->
         <scene sceneID="RUX-fR-MtN">
             <objects>
-                <tableViewController id="zw4-j3-36R" sceneMemberID="viewController">
+                <tableViewController id="zw4-j3-36R" customClass="CategoryController" customModule="IOSAllDaySushi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9mh-dZ-2iE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="W3S-4E-cvz">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NigiriCell" textLabel="gzM-cq-NcV" detailTextLabel="Cfy-9Y-jev" imageView="KKU-bK-qXo" rowHeight="127" style="IBUITableViewCellStyleSubtitle" id="W3S-4E-cvz">
+                                <rect key="frame" x="0.0" y="28" width="414" height="127"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W3S-4E-cvz" id="0Td-h4-fgh">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="126.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Nigiri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gzM-cq-NcV">
+                                            <rect key="frame" x="191" y="43" width="40" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Koele tekst over de nigiri sushi en " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cfy-9Y-jev">
+                                            <rect key="frame" x="191" y="66.5" width="193" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="icon kopie" id="KKU-bK-qXo">
+                                            <rect key="frame" x="20" y="0.0" width="156" height="126.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -33,11 +53,11 @@
                             <outlet property="delegate" destination="zw4-j3-36R" id="feF-KD-C0G"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="FBQ-pd-7IX"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="FBQ-pd-7IX"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sB3-xm-BhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="839" y="-303"/>
+            <point key="canvasLocation" x="837.68115942028987" y="-303.34821428571428"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -96,6 +116,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icon kopie" width="265" height="215"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
