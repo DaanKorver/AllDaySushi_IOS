@@ -9,8 +9,12 @@
 import UIKit
 
 class CategoryController: UITableViewController {
-    let sushi = ["Sushi", "groentesushi", "vis"]
 
+ //   @IBOutlet weak var titleName: UILabel!
+    let sushi = ["Nigiri", "Shasimi", "Uramaki", "Maki"]
+    let descriptions = ["Eerste", "Tweede", "Derde", "Vierde"]
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +23,10 @@ class CategoryController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 160
     }
 
     // MARK: - Table view data source.
@@ -36,14 +44,18 @@ class CategoryController: UITableViewController {
    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "NigiriCell", for: indexPath)
+       
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NigiriCell", for: indexPath) as! SushiCell
         
-        cell.textLabel?.text = sushi[indexPath.item]
+//        cell.textLabel?.text = sushi[indexPath.item]
+        cell.titleName?.text = sushi[indexPath.item]
+        cell.desc?.text = descriptions[indexPath.item];
+        
+          return cell
 
-        // Configure the cell...
-
-        return cell
+        // Configure the cell..
     }
+}
  
 
     /*
@@ -91,4 +103,4 @@ class CategoryController: UITableViewController {
     }
     */
 
-}
+
