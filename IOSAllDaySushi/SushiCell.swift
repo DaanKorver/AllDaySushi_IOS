@@ -13,6 +13,9 @@ class SushiCell: UITableViewCell {
     @IBOutlet weak var titleName: UILabel!
     
     @IBOutlet weak var desc: UILabel!
+    
+    @IBOutlet weak var categoryImg: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -12,7 +12,15 @@ class CategoryController: UITableViewController {
 
  //   @IBOutlet weak var titleName: UILabel!
     let sushi = ["Nigiri", "Shasimi", "Uramaki", "Maki"]
-    let descriptions = ["Eerste", "Tweede", "Derde", "Vierde"]
+    let descriptions = [
+        "Nigiri is een sushi soort waarbij een stukje vis op een bedje van rijst wordt gelegd. De warmte van de rijst vult de koud vis aan.",
+        "Sashimi is rauwe vis die zonder rijst wordt opgediend. De plakjes vis worden gegageerd met wat zeewier onder de vis. Geserveerd als setje van zes plakjes.",
+        "Bij deze sushi wordt er meestal gebruik gemaakt van twee of meer soorten vullingen. Bij de Uramaki zitten de vulling En de zeeweer aan de binnenkant. Het is een maki die binnenstebuiten is gekeerd.",
+        "De Maki wordt gemaakt van rijst en een vulling van vis, groente of ei en gerold in zeewier. De sushi-chef snijdt de rol vervolgens in vier of acht kleinere stukjes"]
+    
+    let catergoryImages = [UIImage(named: "nigiri-cat"),UIImage(named: "shasimi-cat"),UIImage(named: "maki-cat"),UIImage(named: "nigiri-cat")]
+    
+    let cellSpacingHeight : CGFloat = 5
 
     
     override func viewDidLoad() {
@@ -26,7 +34,7 @@ class CategoryController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 160
+        return 220
     }
 
     // MARK: - Table view data source.
@@ -41,6 +49,15 @@ class CategoryController: UITableViewController {
         return sushi.count
     }
     
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.backgroundColor = UIColor.clear
+        return headerView
+    }
+    
+
+    
+    
    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -49,7 +66,11 @@ class CategoryController: UITableViewController {
         
 //        cell.textLabel?.text = sushi[indexPath.item]
         cell.titleName?.text = sushi[indexPath.item]
-        cell.desc?.text = descriptions[indexPath.item];
+        cell.desc?.text = descriptions[indexPath.item]
+        cell.categoryImg?.image = self.catergoryImages[indexPath .row]
+        cell.backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.9490196078, alpha: 1)
+        cell.clipsToBounds = true
+
         
           return cell
 
