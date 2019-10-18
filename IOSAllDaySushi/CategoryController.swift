@@ -70,11 +70,24 @@ class CategoryController: UITableViewController {
         cell.categoryImg?.image = self.catergoryImages[indexPath .row]
         cell.backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.9490196078, alpha: 1)
         cell.clipsToBounds = true
-
+        
         
           return cell
 
         // Configure the cell..
+    }
+    
+     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let Storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let DsC = Storyboard.instantiateInitialViewController() as! DetailSushiControllerViewController
+        
+        DsC.getImage = catergoryImages[indexPath.row] as! UIImage
+        DsC.getName = sushi[indexPath.row] as! String
+        
+//        self.navigationController?.pushViewController(DcS, animated: true)
+        
+        //        DetailSushiControllerViewController.getName = name[index]
+        
     }
 }
  
