@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--home-->
+        <!--Overzicht-->
         <scene sceneID="RUX-fR-MtN">
             <objects>
                 <tableViewController id="zw4-j3-36R" customClass="CategoryController" customModule="IOSAllDaySushi" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,13 +71,13 @@
                             <outlet property="delegate" destination="zw4-j3-36R" id="feF-KD-C0G"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="home" image="home_tab_bar_icon" id="FBQ-pd-7IX"/>
+                    <navigationItem key="navigationItem" title="Overzicht" id="j0m-PN-U9f"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sB3-xm-BhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="837.68115942028987" y="-303.34821428571428"/>
+            <point key="canvasLocation" x="1747.826086956522" y="-303.34821428571428"/>
         </scene>
-        <!--Detail Sushi Controller View Controller-->
+        <!--Item-->
         <scene sceneID="GZt-zx-Y9N">
             <objects>
                 <viewController storyboardIdentifier="DetailSushiControllerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g4p-wr-WbT" customClass="DetailSushiControllerViewController" customModule="IOSAllDaySushi" customModuleProvider="target" sceneMemberID="viewController">
@@ -107,6 +107,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ThI-uS-o6o"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="DKJ-rc-blZ"/>
                     <connections>
                         <outlet property="imgImage" destination="je2-Gq-Jym" id="CWy-T2-mZI"/>
                         <outlet property="lblDescription" destination="gjG-6k-Zyt" id="l4I-Bd-PcD"/>
@@ -115,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fgg-w3-FKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1692.753623188406" y="-303.34821428571428"/>
+            <point key="canvasLocation" x="2589.8550724637685" y="-303.34821428571428"/>
         </scene>
         <!--Cart-->
         <scene sceneID="wg7-f3-ORb">
@@ -152,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="838" y="356"/>
+            <point key="canvasLocation" x="838" y="378"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -164,13 +165,32 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="zw4-j3-36R" kind="relationship" relationship="viewControllers" id="cDj-Fk-dUM"/>
+                        <segue destination="sRs-Ie-nUZ" kind="relationship" relationship="viewControllers" id="cDj-Fk-dUM"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-436" y="-84"/>
+        </scene>
+        <!--home-->
+        <scene sceneID="esK-HV-Mf4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sRs-Ie-nUZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="home" image="home_tab_bar_icon" id="FBQ-pd-7IX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vDW-zQ-TEG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zw4-j3-36R" kind="relationship" relationship="rootViewController" id="8hb-TN-xKk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hGV-Qm-QEk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837.68115942028987" y="-303.34821428571428"/>
         </scene>
     </scenes>
     <resources>

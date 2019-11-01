@@ -145,7 +145,6 @@ class CategoryController: UITableViewController {
         
         let destination = segue.destination as? DetailSushiControllerViewController
         let path = tableView.indexPathForSelectedRow
-        print(path)
         
         destination?.getName = sushi[path?.row ?? 0]
         destination?.getDescription = descriptions[path?.row ?? 0]
