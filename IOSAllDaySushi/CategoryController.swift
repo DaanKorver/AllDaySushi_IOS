@@ -78,18 +78,16 @@ class CategoryController: UITableViewController {
     }
     
      override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let Storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let DsC = Storyboard.instantiateInitialViewController() as! DetailSushiControllerViewController
-        
-        DsC.getImage = catergoryImages[indexPath.row] as! UIImage
-        DsC.getName = sushi[indexPath.row] as! String
-        
-//        self.navigationController?.pushViewController(DcS, animated: true)
-        
-        //        DetailSushiControllerViewController.getName = name[index]
-        
+//        let Storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let DsC = Storyboard.instantiateInitialViewController() as! DetailSushiControllerViewController
+//
+//        DsC.getImage = catergoryImages[indexPath.row] as! UIImage
+//        DsC.getName = sushi[indexPath.row] as! String
+//
+//        self.navigationController?.pushViewController(DsC, animated: true)
+
     }
-}
+
  
 
     /*
@@ -127,14 +125,31 @@ class CategoryController: UITableViewController {
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+//        // Get the new view controller using segue.destination.
+//
+//        // Pass the selected object to the new view controller.
+//
+////        let Storyboard = UIStoryboard(name: "Main", bundle: nil)
+////        let DsC = Storyboard.instantiateInitialViewController() as! DetailSushiControllerViewController
+//        let DsC = DetailSushiControllerViewController()
+//
+////        DsC.getImage = catergoryImages[IndexPath.row] as! UIImage
+//        DsC.getName = "SUSHI"
+//
+//        self.navigationController?.pushViewController(DsC, animated: true)
+        
+        let destination = segue.destination as? DetailSushiControllerViewController
+        let path = tableView.indexPathForSelectedRow
+        print(path)
+        
+        destination?.getName = sushi[path?.row ?? 0]
+
     }
-    */
+ 
 
-
+}

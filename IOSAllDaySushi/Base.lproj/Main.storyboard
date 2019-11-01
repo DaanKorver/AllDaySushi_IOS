@@ -62,7 +62,7 @@
                                     <outlet property="categoryImg" destination="RzU-hX-0dU" id="Ggg-X7-DGp"/>
                                     <outlet property="desc" destination="PWb-Xx-Le4" id="c0l-Nt-DPS"/>
                                     <outlet property="titleName" destination="Mf3-Ts-MYN" id="L62-rE-lIG"/>
-                                    <segue destination="g4p-wr-WbT" kind="show" id="av4-fB-wSL"/>
+                                    <segue destination="g4p-wr-WbT" kind="show" id="hrO-yt-Nlo"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -89,15 +89,8 @@
                                 <rect key="frame" x="37" y="79" width="340" height="218"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSY-7j-6ga">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HALLO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSY-7j-6ga">
                                 <rect key="frame" x="37" y="400" width="357" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKN-Je-aWK">
-                                <rect key="frame" x="37" y="624" width="340" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -108,13 +101,13 @@
                         <viewLayoutGuide key="safeArea" id="ThI-uS-o6o"/>
                     </view>
                     <connections>
-                        <outlet property="imgimage" destination="je2-Gq-Jym" id="aBD-li-YB8"/>
+                        <outlet property="imgImage" destination="je2-Gq-Jym" id="CWy-T2-mZI"/>
                         <outlet property="lblName" destination="FSY-7j-6ga" id="qo1-A5-Is6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fgg-w3-FKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1539.1304347826087" y="-299.33035714285711"/>
+            <point key="canvasLocation" x="1694" y="-303"/>
         </scene>
         <!--Cart-->
         <scene sceneID="wg7-f3-ORb">
