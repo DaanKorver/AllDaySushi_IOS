@@ -11,11 +11,13 @@ import UIKit
 class DetailSushiControllerViewController: UIViewController {
 //
     var getName = String()
+    var getDescription = String()
     var getImage = UIImage()
 
 
     @IBOutlet weak var imgImage: UIImageView!
     @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblDescription: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,7 @@ class DetailSushiControllerViewController: UIViewController {
         print(" Voorbeeld " )
         imgImage.image = getImage
         lblName.text! = getName
+        lblDescription.text! = getDescription
     }
 
     

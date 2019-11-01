@@ -96,18 +96,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjG-6k-Zyt">
+                                <rect key="frame" x="37" y="589" width="357" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ThI-uS-o6o"/>
                     </view>
                     <connections>
                         <outlet property="imgImage" destination="je2-Gq-Jym" id="CWy-T2-mZI"/>
+                        <outlet property="lblDescription" destination="gjG-6k-Zyt" id="l4I-Bd-PcD"/>
                         <outlet property="lblName" destination="FSY-7j-6ga" id="qo1-A5-Is6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fgg-w3-FKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1694" y="-303"/>
+            <point key="canvasLocation" x="1692.753623188406" y="-303.34821428571428"/>
         </scene>
         <!--Cart-->
         <scene sceneID="wg7-f3-ORb">

@@ -148,7 +148,9 @@ class CategoryController: UITableViewController {
         print(path)
         
         destination?.getName = sushi[path?.row ?? 0]
-
+        destination?.getDescription = descriptions[path?.row ?? 0]
+        destination?.getImage = catergoryImages[path?.row ?? 0]!
+        
     }
  
 
