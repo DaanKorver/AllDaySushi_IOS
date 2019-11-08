@@ -15,6 +15,7 @@ class DetailSushiControllerViewController: UIViewController {
     var getImage = UIImage()
 
 
+    @IBOutlet weak var roundedButton: UIButton!
     @IBOutlet weak var imgImage: UIImageView!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblDescription: UILabel!
@@ -28,6 +29,7 @@ class DetailSushiControllerViewController: UIViewController {
         imgImage.image = getImage
         lblName.text! = getName
         lblDescription.text! = getDescription
+        roundedButton.layer.cornerRadius = 10
     }
 
     
