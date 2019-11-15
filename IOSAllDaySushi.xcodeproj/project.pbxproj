@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F657E2E237EB73A007AF10B /* CartControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F657E2D237EB73A007AF10B /* CartControllerViewController.swift */; };
 		3FB1416C2359D77E00A541B3 /* DetailSushiControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1416B2359D77E00A541B3 /* DetailSushiControllerViewController.swift */; };
 		3FC26B4E2350880100AA3F85 /* SushiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC26B4D2350880100AA3F85 /* SushiCell.swift */; };
 		3FC437832334DBA800FB582A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC437822334DBA800FB582A /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F657E2D237EB73A007AF10B /* CartControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartControllerViewController.swift; sourceTree = "<group>"; };
 		3FB1416B2359D77E00A541B3 /* DetailSushiControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSushiControllerViewController.swift; sourceTree = "<group>"; };
 		3FC26B4D2350880100AA3F85 /* SushiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiCell.swift; sourceTree = "<group>"; };
 		3FC4377F2334DBA800FB582A /* IOSAllDaySushi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSAllDaySushi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 				3FC437822334DBA800FB582A /* AppDelegate.swift */,
 				3FC437862334DBA800FB582A /* SecondViewController.swift */,
 				3FC437882334DBA800FB582A /* Main.storyboard */,
+				3F657E2D237EB73A007AF10B /* CartControllerViewController.swift */,
 				3FB1416B2359D77E00A541B3 /* DetailSushiControllerViewController.swift */,
 				3FC4378B2334DBA800FB582A /* Assets.xcassets */,
 				3FC4378D2334DBA800FB582A /* LaunchScreen.storyboard */,
@@ -271,6 +274,7 @@
 				3FB1416C2359D77E00A541B3 /* DetailSushiControllerViewController.swift in Sources */,
 				3FDC37BC23474BFB00F42876 /* CategoryController.swift in Sources */,
 				3FC26B4E2350880100AA3F85 /* SushiCell.swift in Sources */,
+				3F657E2E237EB73A007AF10B /* CartControllerViewController.swift in Sources */,
 				3FC437832334DBA800FB582A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,8 +13,8 @@ class DetailSushiControllerViewController: UIViewController {
     var getName = String()
     var getDescription = String()
     var getImage = UIImage()
-
-
+    public var yourVariable = "test"
+    
     @IBOutlet weak var roundedButton: UIButton!
     @IBOutlet weak var imgImage: UIImageView!
     @IBOutlet weak var lblName: UILabel!
